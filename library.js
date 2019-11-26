@@ -1,5 +1,6 @@
 function start() {
   let clicklightning = document.getElementById('lightning-bolt');
+  let clickletterD = document.getElementById('letterD')
   let clicktitle = document.getElementById('title');
   let clickgrid = document.getElementById('title-grid');
   let collapseableGrid = document.getElementById('collapseable-grid');
