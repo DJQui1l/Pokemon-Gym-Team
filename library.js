@@ -1,34 +1,42 @@
-function start() {
-  let clicklightning = document.getElementById('lightning-bolt');
-  let clicktitle = document.getElementById('title');
-  let clickgrid = document.getElementById('title-grid');
-  let collapseableGrid = document.getElementById('collapseable-grid');
+class Pokemon {
+  constructor(name, sprite, hp, attack, defense, abilities) {
+    this.name= name;
+    this.sprite= sprite;
+    this.hp= hp;
+    this.attack= attack;
+    this.defense= defense;
+    this.ability= ability;
 
-  clicklightning.addEventListener("click", function() {
+    this.container = document.querySelector('#pokemonStats');
+    this.element = document.createElement("div")
+  }
+  display(){
+    let pokeImage = document.getElementById('Img'+ this.page);
+    pokeImage.src = this.sprite;
 
-    clicklightning.style.animation = "fade-out 1s ease-out";
+    let name = document.createElement('h2')
+    name.innerHTML = "Name: " + this.name
+    this.element.appendChild(name)
+    this.container.appendChild(this.element)
 
-    setTimeout(() => {
-      clicklightning.style.display = "none";
-      clicktitle.style.display = "flex";
-      clicktitle.style.animation = "fade-in 1s ease-in, scale 4s ease-out";
-    }, 1004)
+    let hp = document.createElement('h3')
+    hp.innerHTML = "HP: " + this.hp
+    this.element.appendChild(hp)
+    this.container.appendChild(this.element)
 
-    setTimeout(() => {
-      clicktitle.style.animation = "fade-out 1s ease-in, scale 4s ease-out";
-    }, 4000)
+    let attack = document.createElement('h3')
+    attack.innerHTML = "Attack: " + this.attack
+    this.element.appendChild(attack)
+    this.container.appendChild(this.element)
 
-    setTimeout(() => {
-      clicktitle.style.display = "none";
-      clickgrid.style.display = "none";
-      clicktitle.remove()
-      clickgrid.remove()
+    let defense = document.createElement('h3')
+    defense.innerHTML = "Defense: " + this.defense
+    this.element.appendChild(defense);
+    this.container.appendChild(this.element)
 
-      collapseableGrid.style.display = "flex"
-      collapseableGrid.style.animation = "fade-in 1s ease-in"
-    }, 5000)
-
-  })
+    let abilities = document.createElement('h3')
+    abilities.innerHTML = "Ability: " + this.ability
+    this.element.appendChild(ability)
+    this.container.appendChild(this.element)
+  }
 }
-
-start()
