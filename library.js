@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 class Pokemon {
   constructor(name, sprite, hp, attack, defense, abilities) {
     this.name= name;
@@ -39,11 +39,11 @@ class Pokemon {
     abilities.innerHTML = "Ability: " + this.ability
     this.element.appendChild(ability)
     this.container.appendChild(this.element)
-=======
+
 class Trainer {
   constructor(name){
     this.name
     this.team = []
->>>>>>> 3a58634708923aa2cab5f73d1d041f9e897e9d46
+
   }
 }
