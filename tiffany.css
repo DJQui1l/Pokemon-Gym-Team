@@ -1,0 +1,41 @@
+h1{
+  color: #e8eb34;
+}
+body {
+  margin: 0 auto;
+  background-color: #101010;
+  color: white;
+  /* background-color: #000; */
+  /* overflow: hidden; */
+}
+#ability-list {
+  color: #EEE;
+}
+#stats-list {
+  color: #EEE;
+}
+
+
+/* #trainer{
+  grid-area: trainer;
+    color: white;
+} */
+#pokedex-grid{
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-areas:
+  " . form . "
+  " sprites sprites sprites "
+  " . . . ";
+}
+#spriteBox{
+  /* border: 1px solid red; */
+
+  display: inline-block;
+  align-content: center;
+}
+
+#SpriteContainer {
+display:flex;
+width: 100%;
+}
