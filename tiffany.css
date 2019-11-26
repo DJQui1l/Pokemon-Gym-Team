@@ -1,12 +1,23 @@
 h1{
-  color: #e8eb34;
+  color: white;
+  font-family: 'Odibee Sans', cursive;
 }
 body {
   margin: 0 auto;
-  background-color: #101010;
-  color: white;
+  background-image: url(https://images.unsplash.com/photo-1472145246862-b24cf25c4a36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
   /* background-color: #000; */
   /* overflow: hidden; */
+}
+#rectangle{
+  margin-right: 326px;
+  margin-bottom: 0px;
+  margin-top: -474px;
+  width: 367px;
+  height: 461px;
+  background-color: #413557;
+  float: right;
 }
 #ability-list {
   color: #EEE;
@@ -16,10 +27,10 @@ body {
 }
 
 
-/* #trainer{
+#trainer{
   grid-area: trainer;
     color: white;
-} */
+}
 #pokedex-grid{
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 33% 33% 33%;
