@@ -44,6 +44,54 @@ class Pokemon {
   }
 }
 
+axios.get("https://fizal.me/pokeapi/api/v2/name/squirtle.json")
+  .then(function (answer){
+  console.log(answer);
+  let name = answer.data.name;
+  let sprite = answer.data.sprites.front_default;
+  let hp = answer.data.stats[5].base_stat;
+  let attack =  answer.data.stats[4].base_stat;
+  let defense = answer.data.stats[3].base_stat;
+  let ability =answer.data.abilities[0].ability.name
+  let page = '1'
+  let Squirtle = new Pokemon( name, sprite, hp, attack ,defense, ability, page);
+      Squirtle.display();
+  // Mukete = new Trainer()
+  // Mukete.add(Entei)
+
+})
+axios.get("https://fizal.me/pokeapi/api/v2/name/sneasel.json")
+  .then(function (answer){
+  console.log(answer);
+  let name = answer.data.name;
+  let sprite = answer.data.sprites.front_default;
+  let hp = answer.data.stats[5].base_stat;
+  let attack =  answer.data.stats[4].base_stat;
+  let defense = answer.data.stats[3].base_stat;
+  let ability =answer.data.abilities[0].ability.name
+  let page = '2'
+  let Sneasel = new Pokemon( name, sprite, hp, attack ,defense, ability, page);
+      Sneasel.display();
+  // Mukete = new Trainer()
+  // Mukete.add(Entei)
+
+})
+axios.get("https://fizal.me/pokeapi/api/v2/name/buizel.json")
+  .then(function (answer){
+  console.log(answer);
+  let name = answer.data.name;
+  let sprite = answer.data.sprites.front_default;
+  let hp = answer.data.stats[5].base_stat;
+  let attack =  answer.data.stats[4].base_stat;
+  let defense = answer.data.stats[3].base_stat;
+  let ability =answer.data.abilities[0].ability.name
+  let page = '3'
+  let Buizel = new Pokemon( name, sprite, hp, attack ,defense, ability, page);
+      Buizel.display();
+  // Mukete = new Trainer()
+  // Mukete.add(Entei)
+
+})
 axios.get("https://fizal.me/pokeapi/api/v2/name/mudkip.json")
   .then(function (answer){
   console.log(answer);
@@ -54,8 +102,8 @@ axios.get("https://fizal.me/pokeapi/api/v2/name/mudkip.json")
   let defense = answer.data.stats[3].base_stat;
   let ability =answer.data.abilities[0].ability.name
   let page = '4'
-  let Pikachu = new Pokemon( name, sprite, hp, attack ,defense, ability, page);
-      Pikachu.display();
+  let Mudkip = new Pokemon( name, sprite, hp, attack ,defense, ability, page);
+      Mudkip.display();
   // Mukete = new Trainer()
   // Mukete.add(Entei)
 
@@ -70,8 +118,8 @@ axios.get("https://fizal.me/pokeapi/api/v2/name/sneasel.json")
   let defense = answer.data.stats[3].base_stat;
   let ability =answer.data.abilities[0].ability.name
   let page = '5'
-  let Pikachu = new Pokemon( name, sprite, hp, attack ,defense, ability, page);
-      Pikachu.display();
+  let Sneasel = new Pokemon( name, sprite, hp, attack ,defense, ability, page);
+      Sneasel.display();
   // Mukete = new Trainer()
   // Mukete.add(Entei)
 
@@ -86,8 +134,8 @@ axios.get("https://fizal.me/pokeapi/api/v2/name/buizel.json")
   let defense = answer.data.stats[3].base_stat;
   let ability =answer.data.abilities[0].ability.name
   let page = '6'
-  let Pikachu = new Pokemon( name, sprite, hp, attack ,defense, ability, page);
-      Pikachu.display();
+  let Buizel = new Pokemon( name, sprite, hp, attack ,defense, ability, page);
+      Buizel.display();
   // Mukete = new Trainer()
   // Mukete.add(Entei)
 
