@@ -1,0 +1,52 @@
+h1{
+  color: white;
+  font-family: 'Odibee Sans', cursive;
+}
+body {
+  margin: 0 auto;
+  background-image: url(https://images.unsplash.com/photo-1472145246862-b24cf25c4a36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: #000; */
+  /* overflow: hidden; */
+}
+#rectangle{
+  margin-right: 326px;
+  margin-bottom: 0px;
+  margin-top: -474px;
+  width: 367px;
+  height: 461px;
+  background-color: #413557;
+  float: right;
+}
+#ability-list {
+  color: #EEE;
+}
+#stats-list {
+  color: #EEE;
+}
+
+
+#trainer{
+  grid-area: trainer;
+    color: white;
+}
+#pokedex-grid{
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-areas:
+  " . form . "
+  " sprites sprites sprites "
+  " . . . ";
+}
+#spriteBox{
+  /* border: 1px solid red; */
+
+  display: inline-block;
+  align-content: center;
+}
+
+#SpriteContainer {
+display:flex;
+width: 100%;
+}
