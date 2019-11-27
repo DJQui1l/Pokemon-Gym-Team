@@ -15,11 +15,11 @@ body {
   /* overflow: hidden; */
 }
 #rectangle{
-  margin-right: 275px;
-margin-bottom: 0px;
-margin-top: -546px;
-width: 500px;
-height: 600px;
+ margin-right: 70px;
+ margin-bottom: 0px;
+ margin-top: -480px;
+ width: 460px;
+ height: 475px;
 background-color: green;
 float: right;
 }
