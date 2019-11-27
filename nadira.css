@@ -20,8 +20,10 @@ body {
  margin-top: -480px;
  width: 460px;
  height: 475px;
-background-color: green;
+background-color: #486347;
 float: right;
+box-shadow: 1px 2px 4px #bd976a;
+padding: 10px;
 }
 #trainer.img{
   height: 581px;
