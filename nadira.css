@@ -1,0 +1,205 @@
+h1{
+  color: white;
+  font-family: 'Odibee Sans', cursive;
+  font-size: 6.2rem;
+    line-height: 110%;
+	margin-left: 56px;
+	padding-left: 28px;
+}
+body {
+  margin: 0 auto;
+  background-image: url(https://images.unsplash.com/photo-1523772849-5ffc814469be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: #000; */
+  /* overflow: hidden; */
+}
+#rectangle{
+ margin-right: 70px;
+ margin-bottom: 0px;
+ margin-top: -480px;
+ width: 460px;
+ height: 475px;
+background-color: #486347;
+float: right;
+box-shadow: 1px 2px 4px #bd976a;
+padding: 10px;
+}
+#trainer.img{
+  height: 581px;
+  margin-left: 137px;
+}
+#ability-list {
+  color: #EEE;
+}
+#stats-list {
+  color: #EEE;
+}
+
+
+#trainer{
+  grid-area: trainer;
+    color: white;
+}
+#pokedex-grid{
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-areas:
+  " . form . "
+  " sprites sprites sprites "
+  " . . . ";
+}
+#spriteBox{
+  /* border: 1px solid red; */
+
+  display: inline-block;
+  align-content: center;
+}
+
+#SpriteContainer {
+display:flex;
+width: 100%;
+}
+#team-logos{
+	display:grid;
+	position: relative;
+	grid-template-columns: 33% 33% 33%;
+	grid-template-rows: 33% 33% 33%;
+	
+}
+
+#lightning-bolt {
+    grid-area: lightning-bolt;
+    fill: #383838;
+    /* fill: #fff000; */
+  /* filter: drop-shadow(0px 0px 6px #FFFF33); */
+  /* animation: light-pulse 1.5s infinite alternate ease-in,
+   floating 3s infinite alternate ease-in-out;
+  animation-play-state: pause; */
+  /* animation-delay: 3s; */
+    height: 15%;
+    width: 12%;
+  /* For clean hover transition */
+    transition: 1s;
+}
+
+#lightning-bolt:hover {
+    fill: blue;
+    filter: drop-shadow(0px 0px 15px blue);
+    transform: translateY(-25px);
+  /* animation: floating 2s infinite alternate ease-in-out;
+    animation-play-state: running; */
+    transition: 1s
+}
+
+#tiffany {
+  
+}
+
+#tiffany-logo {
+  grid-area: darian-logo;
+  color: #383838;
+  height: 15%;
+  width: 12%;
+  transition: 1s;
+}
+
+#tiffany-logo:hover {
+  filter:drop-shadow(7px 3px 12px purple);
+  transform: translateY(-25px);
+}
+
+
+#steph-logo {
+  grid-area: step-logo;
+  color: #383838;
+  height: 15%;
+  width: 9.7%;
+  transition: 1s;
+}
+
+#steph-logo:hover {
+  filter: drop-shadow(7px 3px 12px red);
+  transform: translateY(-25px);
+}
+@keyframes light-pulse {
+  0% {
+    filter: drop-shadow(0px 0px 6px #FFFF33);
+  }
+
+  100% {
+    filter: drop-shadow(0px 0px 20px #FFFF33);
+  }
+}
+
+/* ----------------------------------- */
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-30px);
+  }
+}
+@keyframes floating2 {
+  0% {
+    transform: translateY(10px);
+  }
+
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* --------------------- */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ------------------------- */
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes drop-in {
+  0%{
+    transform: translateY(-20px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+
+}
+body {
+  margin: 0 auto;
+  /* background-color: #101010; */
+  /* background-color: #000; */
+  /* overflow: hidden;
+}
+
+
+	
