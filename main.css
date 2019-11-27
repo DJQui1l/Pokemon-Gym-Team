@@ -80,7 +80,11 @@ body {
   margin: 0 auto;
   background-color: #101010;
   /* background-color: #000; */
+<<<<<<< HEAD
+  /* overflow: hidden;
+=======
   /* overflow: hidden; */
+>>>>>>> c6088e23825d83ad49bce3635365810bb23fd653
 }
 
 
@@ -98,14 +102,13 @@ body {
     grid-gap: 9px;
     /* border: 1px solid #EEE;
 }
-
 #title-grid div {
   /* border: solid 1px;
   border-color: red;
    padding: 2%; */
 }
 
- #title {
+#title {
   grid-area: header;
       /* color: #383838; */
       color: #101010;
@@ -123,121 +126,106 @@ body {
 }
 
 #lightningDiv {
-  padding: 2%;
-  margin: 17.7% 0;
-  float: center;
+    padding: 2%;
+    margin: -6.3% 0;
+    float: center;
 }
 
 #lightning-bolt {
-  grid-area: lightning-bolt;
-  fill: #383838;
-  /* fill: #fff000; */
+    grid-area: lightning-bolt;
+    fill: #383838;
+    /* fill: #fff000; */
 
-  display: block;
-  position: relative;
-  top: 36.7%;
-  left: 42%;
+    display: block;
+    position: relative;
+    top: 36.7%;
+    left: 80%;
   /* filter: drop-shadow(0px 0px 6px #FFFF33); */
   /* animation: light-pulse 1.5s infinite alternate ease-in,
    floating 3s infinite alternate ease-in-out;
   animation-play-state: pause; */
   /* animation-delay: 3s; */
-  height: 15%;
-  width: 12%;
+    height: 15%;
+    width: 12%;
   /* For clean hover transition */
-  transition: 1s;
+    transition: 1s;
 }
 
 #lightning-bolt:hover {
-  cursor: url("C:\Users\djarvis\Documents\Class 27\NYCDA\projects\Pokedex\lightning-svgrepo-com.svg");
-  fill: #fff000;
-  filter: drop-shadow(0px 0px 15px #FFFF33);
-  transform: translateY(-25px);
+    fill: blue;
+    filter: drop-shadow(0px 0px 15px blue);
+    transform: translateY(-25px);
   /* animation: floating 2s infinite alternate ease-in-out;
     animation-play-state: running; */
-  transition: 1s
+    transition: 1s
 }
 
-#ability-list {
+#tiffany {
+   padding: 2%;
+   margin: 10.7%;
+}
+
+#tiffany-logo {
+  grid-area: darian-logo;
+  color: #383838;
+  display: block;
+  position: relative;
+  top: 36.7%;
+  left: 42%;
+  height: 15%;
+  width: 12%;
+  transition: 1s;
+}
+
+#tiffany-logo:hover {
+  filter:drop-shadow(7px 3px 12px purple);
+  transform: translateY(-25px);
+}
+
+#steph {
+  padding: 2%;
+  margin: 9.7%;
+}
+
+#steph-logo {
+  grid-area: step-logo;
+  color: #383838;
+  display: block;
+  position: relative;
+  top: 36.7%;
+  left: 42%;
+  height: 15%;
+  width: 9.7%;
+  transition: 1s;
+}
+
+#steph-logo:hover {
+  filter: drop-shadow(7px 3px 12px red);
+  transform: translateY(-25px);
+}
+
+#nadira {
+  padding: 2%;
+  margin: -0.3%;
+}
+
+#nadira-logo {
+  grid-area: nadira-logo;
   color: #EEE;
+  display: block;
+  position: relative;
+  bottom: -404px;
+  float: left;
+  top: 36.7%;
+  left: 10%;
+  height: 15%;
+  width: 12%;
+  transition: 1s;
 }
 
-
-#trainer-name{
-  grid-area: trainer-name;
-}
-#poke1-input{
-  grid-area: poke1-input;
-}
-#queryPoke input {
-  padding: 4px;
-  text-align: center;
+#nadira-logo:hover {
+  filter: drop-shadow(7px 3px 12px green);
+  transform: translateY(-25px);
 }
 
-#queryPoke input, textarea {
-  color: white;
-  font-size: .9em;
-  opacity: 75%;
-}
-
-#trainer-name:focus,
-#poke1-input:focus {
-  color: #fff000;
-  outline: #e4030d;
-}
-
-#query-submit{
-  width: 100%;
-  background-color:  #e4030d;
-
-}
-
-#pokedex-grid{
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 33% 33% 33%;
-  grid-template-areas:
-  " . form . "
-  " sprites sprites sprites "
-  " . . . ";
-}
-  #collapseable-grid {
-    grid-area: form;
-    /* border: 1px solid red; */
-    display: none;
-   justify-content: center;
-   animation: 1s ease-in 0s 1 normal none running fade-in;
-   width: 96%;
-   margin: 2%;
-
-  }
-
-  #queryPoke {
-    margin: 2%;
-    border: 1px solid #e4030d;
-    width: 25%;
-    padding: 2% 2%;
-    border-radius: 10px;
-  }
-
-  #query-submit{
-    width: 100%;
-    background-color: #e4030d;
-    border-color: #e4030d;
-    border-radius: 10px;
-    padding: 2%;
-    margin: 7px 1%;
-    opacity: 100%;
-  }
-
-  #spriteBox{
-    /* border: 1px solid red; */
-
-    display: inline-block;
-    align-content: center;
-  }
-
-#SpriteContainer {
-  display:flex;
-  width: 100%;
-  }
 /* -----------------CAROUSEL ---------------- */
