@@ -47,7 +47,7 @@ class Pokemon {
   constructor(name) {
     this.name= name;
 
-    this.ability= [];
+    this.ability=[]
 
     this.container = document.querySelector('#pokemonStats');
     this.element = document.createElement("div")
