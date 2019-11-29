@@ -140,14 +140,11 @@ function start() {
       clicktitle.style.animation = "fade-in 1s ease-in, scale 4s ease-out";
     }, 1004)
  }
-<<<<<<< HEAD
+
 )}
-=======
-}
-<<<<<<< HEAD
-=======
->>>>>>> ced5fb2742188b1c63f0cbb7ed570bb13316599c
+
+
+
 
 
 start()
->>>>>>> 092138c4d217a80a4a79a6ccfa2364188fe37d9f
