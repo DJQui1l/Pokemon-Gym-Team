@@ -65,7 +65,7 @@ width: 100%;
 	position: relative;
 	grid-template-columns: 33% 33% 33%;
 	grid-template-rows: 33% 33% 33%;
-	
+
 }
 
 #lightning-bolt {
@@ -93,7 +93,7 @@ width: 100%;
 }
 
 #tiffany {
-  
+
 }
 
 #tiffany-logo {
@@ -200,6 +200,3 @@ body {
   /* background-color: #000; */
   /* overflow: hidden;
 }
-
-
-	
