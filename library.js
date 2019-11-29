@@ -89,104 +89,190 @@ class Pokemon {
 
   }
 }
+
+// ----STEPH'S POKEMON ------
+axios.get("https://fizal.me/pokeapi/api/v2/name/squirtle.json")
+  .then(function(answer) {
+    console.log(answer);
+    let name = answer.data.name;
+    let sprite = answer.data.sprites.front_default;
+    let hp = answer.data.stats[5].base_stat;
+    let attack = answer.data.stats[4].base_stat;
+    let defense = answer.data.stats[3].base_stat;
+    let ability = answer.data.abilities[0].ability.name
+    let page = '1'
+    let Squirtle = new Pokemon(name, sprite, hp, attack, defense, ability, page);
+    Squirtle.display();
+
+  })
+
+axios.get("https://fizal.me/pokeapi/api/v2/name/sneasel.json")
+  .then(function(answer) {
+    console.log(answer);
+    let name = answer.data.name;
+    let sprite = answer.data.sprites.front_default;
+    let hp = answer.data.stats[5].base_stat;
+    let attack = answer.data.stats[4].base_stat;
+    let defense = answer.data.stats[3].base_stat;
+    let ability = answer.data.abilities[0].ability.name
+    let page = '2'
+    let Sneasel = new Pokemon(name, sprite, hp, attack, defense, ability, page);
+    Sneasel.display();
+
+  })
+
+axios.get("https://fizal.me/pokeapi/api/v2/name/buizel.json")
+  .then(function(answer) {
+    console.log(answer);
+    let name = answer.data.name;
+    let sprite = answer.data.sprites.front_default;
+    let hp = answer.data.stats[5].base_stat;
+    let attack = answer.data.stats[4].base_stat;
+    let defense = answer.data.stats[3].base_stat;
+    let ability = answer.data.abilities[0].ability.name
+    let page = '3'
+    let Buizel = new Pokemon(name, sprite, hp, attack, defense, ability, page);
+    Buizel.display();
+
+  })
+// --------- TIFF'S POKEMON ------------
+
+axios.get("https://fizal.me/pokeapi/api/v2/name/mudkip.json")
+  .then(function(answer) {
+    console.log(answer);
+    let name = answer.data.name;
+    let sprite = answer.data.sprites.front_default;
+    let hp = answer.data.stats[5].base_stat;
+    let attack = answer.data.stats[4].base_stat;
+    let defense = answer.data.stats[3].base_stat;
+    let ability = answer.data.abilities[0].ability.name
+    let page = '4'
+    let Mudkip = new Pokemon(name, sprite, hp, attack, defense, ability, page);
+    Mudkip.display();
+
+  })
+
+axios.get("https://fizal.me/pokeapi/api/v2/name/sneasel.json")
+  .then(function(answer) {
+    console.log(answer);
+    let name = answer.data.name;
+    let sprite = answer.data.sprites.front_default;
+    let hp = answer.data.stats[5].base_stat;
+    let attack = answer.data.stats[4].base_stat;
+    let defense = answer.data.stats[3].base_stat;
+    let ability = answer.data.abilities[0].ability.name
+    let page = '5'
+    let Sneasel = new Pokemon(name, sprite, hp, attack, defense, ability, page);
+    Sneasel.display();
+
+  })
+
+axios.get("https://fizal.me/pokeapi/api/v2/name/buizel.json")
+  .then(function(answer) {
+    console.log(answer);
+    let name = answer.data.name;
+    let sprite = answer.data.sprites.front_default;
+    let hp = answer.data.stats[5].base_stat;
+    let attack = answer.data.stats[4].base_stat;
+    let defense = answer.data.stats[3].base_stat;
+    let ability = answer.data.abilities[0].ability.name
+    let page = '6'
+    let Buizel = new Pokemon(name, sprite, hp, attack, defense, ability, page);
+    Buizel.display();
+
+  })
 // --- NADIRA's POKEMON ------
+
 axios.get("https://fizal.me/pokeapi/api/v2/name/eevee.json")
-  .then(function (answer){
-  console.log(answer);
-  let name = answer.data.name;
-  let sprite = answer.data.sprites.front_default;
-  let hp = answer.data.stats[5].base_stat;
-  let attack =  answer.data.stats[4].base_stat;
-  let defense = answer.data.stats[3].base_stat;
-  let ability =answer.data.abilities[0].ability.name
-  let page = '7'
-  let eevee = new Pokemon( name, sprite, hp, attack ,defense, ability, page);
-      eevee.display();
-  // Mukete = new Trainer()
-  // Mukete.add(Entei)
+  .then(function(answer) {
+    console.log(answer);
+    let name = answer.data.name;
+    let sprite = answer.data.sprites.front_default;
+    let hp = answer.data.stats[5].base_stat;
+    let attack = answer.data.stats[4].base_stat;
+    let defense = answer.data.stats[3].base_stat;
+    let ability = answer.data.abilities[0].ability.name
+    let page = '7'
+    let eevee = new Pokemon(name, sprite, hp, attack, defense, ability, page);
+    eevee.display();
 
-})
+  })
+
+
+
 axios.get("https://fizal.me/pokeapi/api/v2/name/jigglypuff.json")
-  .then(function (answer){
-  console.log(answer);
-  let name = answer.data.name;
-  let sprite = answer.data.sprites.front_default;
-  let hp = answer.data.stats[5].base_stat;
-  let attack =  answer.data.stats[4].base_stat;
-  let defense = answer.data.stats[3].base_stat;
-  let ability =answer.data.abilities[0].ability.name
-  let page = '8'
-  let jigglypuff = new Pokemon( name, sprite, hp, attack ,defense, ability, page);
-      jigglypuff.display();
-  // Mukete = new Trainer()
-  // Mukete.add(Entei)
+  .then(function(answer) {
+    console.log(answer);
+    let name = answer.data.name;
+    let sprite = answer.data.sprites.front_default;
+    let hp = answer.data.stats[5].base_stat;
+    let attack = answer.data.stats[4].base_stat;
+    let defense = answer.data.stats[3].base_stat;
+    let ability = answer.data.abilities[0].ability.name
+    let page = '8'
+    let jigglypuff = new Pokemon(name, sprite, hp, attack, defense, ability, page);
+    jigglypuff.display();
 
-})
+  })
 axios.get("https://fizal.me/pokeapi/api/v2/name/growlithe.json")
-  .then(function (answer){
-  console.log(answer);
-  let name = answer.data.name;
-  let sprite = answer.data.sprites.front_default;
-  let hp = answer.data.stats[5].base_stat;
-  let attack =  answer.data.stats[4].base_stat;
-  let defense = answer.data.stats[3].base_stat;
-  let ability =answer.data.abilities[0].ability.name
-  let page = '9'
-  let growlithe = new Pokemon( name, sprite, hp, attack ,defense, ability, page);
-      growlithe.display();
-  // Mukete = new Trainer()
-  // Mukete.add(Entei)
+  .then(function(answer) {
+    console.log(answer);
+    let name = answer.data.name;
+    let sprite = answer.data.sprites.front_default;
+    let hp = answer.data.stats[5].base_stat;
+    let attack = answer.data.stats[4].base_stat;
+    let defense = answer.data.stats[3].base_stat;
+    let ability = answer.data.abilities[0].ability.name
+    let page = '9'
+    let growlithe = new Pokemon(name, sprite, hp, attack, defense, ability, page);
+    growlithe.display();
 
-})
+  })
+
 // ------------ DARIAN'S POKEMON ----------
 axios.get("https://fizal.me/pokeapi/api/v2/name/lucario.json")
-  .then(function (answer){
-  console.log(answer);
-  let name = answer.data.name;
-  let sprite = answer.data.sprites.front_default;
-  let hp = answer.data.stats[5].base_stat;
-  let attack =  answer.data.stats[4].base_stat;
-  let defense = answer.data.stats[3].base_stat;
-  let ability =answer.data.abilities[0].ability.name
-  let page = '10'
-  let lucario = new Pokemon( name, sprite, hp, attack ,defense, ability, page);
-      lucario.display();
-  // Mukete = new Trainer()
-  // Mukete.add(Entei)
+  .then(function(answer) {
+    console.log(answer);
+    let name = answer.data.name;
+    let sprite = answer.data.sprites.front_default;
+    let hp = answer.data.stats[5].base_stat;
+    let attack = answer.data.stats[4].base_stat;
+    let defense = answer.data.stats[3].base_stat;
+    let ability = answer.data.abilities[0].ability.name
+    let page = '10'
+    let lucario = new Pokemon(name, sprite, hp, attack, defense, ability, page);
+    lucario.display();
 
-})
+  })
+
 axios.get("https://fizal.me/pokeapi/api/v2/name/emboar.json")
-  .then(function (answer){
-  console.log(answer);
-  let name = answer.data.name;
-  let sprite = answer.data.sprites.front_default;
-  let hp = answer.data.stats[5].base_stat;
-  let attack =  answer.data.stats[4].base_stat;
-  let defense = answer.data.stats[3].base_stat;
-  let ability =answer.data.abilities[0].ability.name
-  let page = '11'
-  let emboar = new Pokemon( name, sprite, hp, attack ,defense, ability, page);
-      emboar.display();
-  // Mukete = new Trainer()
-  // Mukete.add(Entei)
+  .then(function(answer) {
+    console.log(answer);
+    let name = answer.data.name;
+    let sprite = answer.data.sprites.front_default;
+    let hp = answer.data.stats[5].base_stat;
+    let attack = answer.data.stats[4].base_stat;
+    let defense = answer.data.stats[3].base_stat;
+    let ability = answer.data.abilities[0].ability.name
+    let page = '11'
+    let emboar = new Pokemon(name, sprite, hp, attack, defense, ability, page);
+    emboar.display();
 
-})
+  })
 axios.get("https://fizal.me/pokeapi/api/v2/name/decidueye.json")
-  .then(function (answer){
-  console.log(answer);
-  let name = answer.data.name;
-  let sprite = answer.data.sprites.front_default;
-  let hp = answer.data.stats[5].base_stat;
-  let attack =  answer.data.stats[4].base_stat;
-  let defense = answer.data.stats[3].base_stat;
-  let ability =answer.data.abilities[0].ability.name
-  let page = '12'
-  let decidueye = new Pokemon( name, sprite, hp, attack ,defense, ability, page);
-      decidueye.display();
-  // Mukete = new Trainer()
-  // Mukete.add(Entei)
+  .then(function(answer) {
+    console.log(answer);
+    let name = answer.data.name;
+    let sprite = answer.data.sprites.front_default;
+    let hp = answer.data.stats[5].base_stat;
+    let attack = answer.data.stats[4].base_stat;
+    let defense = answer.data.stats[3].base_stat;
+    let ability = answer.data.abilities[0].ability.name
+    let page = '12'
+    let decidueye = new Pokemon(name, sprite, hp, attack, defense, ability, page);
+    decidueye.display();
 
-})
+  })
 
 function start() {
   let clickdari = document.getElementById('darian-logo');

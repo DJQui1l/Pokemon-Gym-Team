@@ -18,12 +18,21 @@ img{
   height: 482px;
 }
 #rectangle{
-  margin-right: 88px;
-  margin-top: -510px;
-  width: 367px;
-  height: 461px;
+  color: white;
+  display: grid;
+  grid-template: auto/repeat(3,  30% 30% 33%);
+  grid-gap: 10%;
+  /* margin-right: 88px; */
+margin-top: -510px;
+  /* width: 367px;
+  height: 461px; */
   background-color: #5e1f1f;
-  float: right;
+  /* float: right; */
+  margin-left: 20%;
+}
+#rectangle img{
+  width: 100%;
+  /* height: 100%; */
 }
 #ability-list {
   color: #EEE;
@@ -37,8 +46,11 @@ img{
   grid-area: trainer;
     color: white;
 }
-#pokedex-grid{
-  grid-template-columns: 33% 33% 33%;
+#pokdex-grid{
+  background: blue;
+  /* display: grid;
+  grid-template:auto/repeat(2, 50% 50%); */
+  /* grid-template-columns: 33% 33% 33%;
   grid-template-rows: 33% 33% 33%;
   grid-template-areas:
   " . form . "
