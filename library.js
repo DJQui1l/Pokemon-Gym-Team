@@ -44,54 +44,145 @@ class Trainer{
 
 
 class Pokemon {
-  constructor(name) {
+  constructor(name, sprite, hp, attack, defense, abilities, page) {
     this.name= name;
+    this.sprite= sprite;
+    this.hp= hp;
+    this.attack= attack;
+    this.defense= defense;
+    this.abilities= abilities;
+    this.page = page
 
-    this.ability=[]
-
-    this.container = document.querySelector('#pokemonStats');
+    this.container = document.getElementById('pokdex-grid'+this.page);
+    console.log(this.container);
     this.element = document.createElement("div")
   }
+  display(){
+    let pokeImage = document.getElementById('Img'+ this.page);
+        pokeImage.src = this.sprite;
+    let name = document.createElement('p')
+    name.innerHTML = "Name: " + this.name
+    this.element.appendChild(name)
+    this.container.appendChild(this.element)
 
-  //
-  // display(){
-  //   let pokeImage = document.getElementById('Img'+ this.page);
-  //   // pokeImage.src = this.sprite;
-  //
-  //   let name = document.createElement('h2')
-  //   name.innerHTML = "Name: " + this.name
-  //   this.element.appendChild(name)
-  //   this.container.appendChild(this.element)
-  //
-  //   let hp = document.createElement('h3')
-  //   hp.innerHTML = "HP: " + this.hp
-  //   this.element.appendChild(hp)
-  //   this.container.appendChild(this.element)
-  //
-  //   let attack = document.createElement('h3')
-  //   attack.innerHTML = "Attack: " + this.attack
-  //   this.element.appendChild(attack)
-  //   this.container.appendChild(this.element)
-  //
-  //   let defense = document.createElement('h3')
-  //   defense.innerHTML = "Defense: " + this.defense
-  //   this.element.appendChild(defense);
-  //   this.container.appendChild(this.element)
-  //
-  //   let abilities = document.createElement('h3')
-  //   abilities.innerHTML = "Ability: " + this.ability
-  //   this.element.appendChild(ability)
-  //   this.container.appendChild(this.element)
-  // }
+    let hp = document.createElement('p')
+    hp.innerHTML = "HP: " + this.hp
+    this.element.appendChild(hp)
+    this.container.appendChild(this.element)
+
+    let attack = document.createElement('p')
+    attack.innerHTML = "Attack: " + this.attack
+    this.element.appendChild(attack)
+    this.container.appendChild(this.element)
+
+    let defense = document.createElement('p')
+    defense.innerHTML = "Defense: " + this.defense
+    this.element.appendChild(defense);
+    this.container.appendChild(this.element)
+
+    let abilities = document.createElement('p')
+    abilities.innerHTML = "Ability: " + this.abilities
+    this.element.appendChild(abilities)
+    this.container.appendChild(this.element)
+
+
+  }
 }
+// --- NADIRA's POKEMON ------
+axios.get("https://fizal.me/pokeapi/api/v2/name/eevee.json")
+  .then(function (answer){
+  console.log(answer);
+  let name = answer.data.name;
+  let sprite = answer.data.sprites.front_default;
+  let hp = answer.data.stats[5].base_stat;
+  let attack =  answer.data.stats[4].base_stat;
+  let defense = answer.data.stats[3].base_stat;
+  let ability =answer.data.abilities[0].ability.name
+  let page = '7'
+  let eevee = new Pokemon( name, sprite, hp, attack ,defense, ability, page);
+      eevee.display();
+  // Mukete = new Trainer()
+  // Mukete.add(Entei)
 
+})
+axios.get("https://fizal.me/pokeapi/api/v2/name/jigglypuff.json")
+  .then(function (answer){
+  console.log(answer);
+  let name = answer.data.name;
+  let sprite = answer.data.sprites.front_default;
+  let hp = answer.data.stats[5].base_stat;
+  let attack =  answer.data.stats[4].base_stat;
+  let defense = answer.data.stats[3].base_stat;
+  let ability =answer.data.abilities[0].ability.name
+  let page = '8'
+  let jigglypuff = new Pokemon( name, sprite, hp, attack ,defense, ability, page);
+      jigglypuff.display();
+  // Mukete = new Trainer()
+  // Mukete.add(Entei)
 
-let nadira = new Trainer('Nadira')
-nadira.add('eevee')
-nadira.add('jigglypuff')
-nadira.add('growlithe')
+})
+axios.get("https://fizal.me/pokeapi/api/v2/name/growlithe.json")
+  .then(function (answer){
+  console.log(answer);
+  let name = answer.data.name;
+  let sprite = answer.data.sprites.front_default;
+  let hp = answer.data.stats[5].base_stat;
+  let attack =  answer.data.stats[4].base_stat;
+  let defense = answer.data.stats[3].base_stat;
+  let ability =answer.data.abilities[0].ability.name
+  let page = '9'
+  let growlithe = new Pokemon( name, sprite, hp, attack ,defense, ability, page);
+      growlithe.display();
+  // Mukete = new Trainer()
+  // Mukete.add(Entei)
 
-let darian = new Trainer("Darian")
-darian.add('emboar')
-darian.add('lucario')
-darian.add('decidueye')
+})
+// ------------ DARIAN'S POKEMON ----------
+axios.get("https://fizal.me/pokeapi/api/v2/name/lucario.json")
+  .then(function (answer){
+  console.log(answer);
+  let name = answer.data.name;
+  let sprite = answer.data.sprites.front_default;
+  let hp = answer.data.stats[5].base_stat;
+  let attack =  answer.data.stats[4].base_stat;
+  let defense = answer.data.stats[3].base_stat;
+  let ability =answer.data.abilities[0].ability.name
+  let page = '10'
+  let lucario = new Pokemon( name, sprite, hp, attack ,defense, ability, page);
+      lucario.display();
+  // Mukete = new Trainer()
+  // Mukete.add(Entei)
+
+})
+axios.get("https://fizal.me/pokeapi/api/v2/name/emboar.json")
+  .then(function (answer){
+  console.log(answer);
+  let name = answer.data.name;
+  let sprite = answer.data.sprites.front_default;
+  let hp = answer.data.stats[5].base_stat;
+  let attack =  answer.data.stats[4].base_stat;
+  let defense = answer.data.stats[3].base_stat;
+  let ability =answer.data.abilities[0].ability.name
+  let page = '11'
+  let emboar = new Pokemon( name, sprite, hp, attack ,defense, ability, page);
+      emboar.display();
+  // Mukete = new Trainer()
+  // Mukete.add(Entei)
+
+})
+axios.get("https://fizal.me/pokeapi/api/v2/name/decidueye.json")
+  .then(function (answer){
+  console.log(answer);
+  let name = answer.data.name;
+  let sprite = answer.data.sprites.front_default;
+  let hp = answer.data.stats[5].base_stat;
+  let attack =  answer.data.stats[4].base_stat;
+  let defense = answer.data.stats[3].base_stat;
+  let ability =answer.data.abilities[0].ability.name
+  let page = '12'
+  let decidueye = new Pokemon( name, sprite, hp, attack ,defense, ability, page);
+      decidueye.display();
+  // Mukete = new Trainer()
+  // Mukete.add(Entei)
+
+})
