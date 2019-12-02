@@ -6,15 +6,10 @@ h1{
 }
 body {
   margin: 0 auto;
-<<<<<<< HEAD
   background-image: url(https://images.unsplash.com/photo-1489189642444-0709966aec44?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
-=======
-  background-image: url(https://images.unsplash.com/photo-1483968049578-867b9ad94034?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80);
->>>>>>> 092138c4d217a80a4a79a6ccfa2364188fe37d9f
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-color: #000; */
-  /* overflow: hidden; */
+
 }
 img{
   height: 482px;
