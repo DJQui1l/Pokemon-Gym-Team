@@ -1,62 +1,99 @@
 h1{
+
   color: white;
+
   font-family: 'Odibee Sans', cursive;
-  font-size: 6.2rem;
-    line-height: 110%;
-	margin-left: 56px;
-	padding-left: 28px;
+
 }
+
 body {
+
   margin: 0 auto;
-  background-image: url(https://images.unsplash.com/photo-1523772849-5ffc814469be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+
+  background-image: url(https://images.unsplash.com/photo-1472145246862-b24cf25c4a36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80);
+
   background-repeat: no-repeat;
+
   background-size: cover;
+
   /* background-color: #000; */
+
   /* overflow: hidden; */
+
 }
+
 #rectangle{
- margin-right: 70px;
- margin-bottom: 0px;
- margin-top: -480px;
- width: 460px;
- height: 475px;
-background-color: #486347;
-float: right;
-box-shadow: 1px 2px 4px #bd976a;
-padding: 10px;
+  margin-left: 20%;
+  color: white;
+  display: grid;
+  grid-template: auto/repeat(3,  30% 30% 33%);
+  margin-top: -474px;
+
+
+
+  background-color: #413557;
+
+
 }
-#trainer.img{
-  height: 581px;
-  margin-left: 137px;
-}
+
 #ability-list {
+
   color: #EEE;
+
 }
+
 #stats-list {
+
   color: #EEE;
+
 }
+
+
+
 
 
 #trainer{
+
   grid-area: trainer;
+
     color: white;
+
 }
+
 #pokedex-grid{
+
   grid-template-columns: 33% 33% 33%;
+
   grid-template-rows: 33% 33% 33%;
+
   grid-template-areas:
+
   " . form . "
+
   " sprites sprites sprites "
+
   " . . . ";
+
 }
+
 #spriteBox{
+
   /* border: 1px solid red; */
 
+
+
   display: inline-block;
+
   align-content: center;
+
 }
 
+
+
 #SpriteContainer {
+
 display:flex;
+
 width: 100%;
+
 }

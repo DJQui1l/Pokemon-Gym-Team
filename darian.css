@@ -15,12 +15,21 @@ body {
 }
 #rectangle{
   margin-right: 326px;
+<<<<<<< HEAD
+  margin-bottom: 0px;
+  margin-top: -546px;
+  width: 367px;
+  height: 461px;
+  background-color: #0d2d61;
+  float: right;
+=======
 margin-bottom: 0px;
 margin-top: -546px;
 width: 367px;
 height: 461px;
 background-color: #0d2d61;
 float: right;
+>>>>>>> DJ_BackEnd
 }
 img{
   height:478px;
