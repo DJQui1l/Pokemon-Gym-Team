@@ -14,25 +14,28 @@ body {
   /* overflow: hidden; */
 }
 #rectangle{
-  margin-right: 326px;
-<<<<<<< HEAD
-  margin-bottom: 0px;
-  margin-top: -546px;
-  width: 367px;
-  height: 461px;
+  display: grid;
+  grid-template: auto/repeat(3,  30% 30% 33%);
+  /* margin-right: 326px; */
+
+  position: absolute;
+  margin: -70% -30% -30% 46%;
   background-color: #0d2d61;
-  float: right;
-=======
-margin-bottom: 0px;
-margin-top: -546px;
-width: 367px;
+  /* float: right; */
+
+/* margin-top: -546px; */
+/* background-color: #0d2d61; */
+/* float: right; */
+color: white;
+width: 600px;
 height: 461px;
-background-color: #0d2d61;
-float: right;
->>>>>>> DJ_BackEnd
+box-shadow: 1px 2px 4px white;
 }
-img{
-  height:478px;
+
+
+}
+#trainer img{
+      width: 20%;
 }
 #ability-list {
   color: #EEE;

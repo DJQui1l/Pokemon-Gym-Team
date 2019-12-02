@@ -15,15 +15,21 @@ body {
   /* overflow: hidden; */
 }
 #rectangle{
- margin-right: 70px;
+  margin-right: 70px;
  margin-bottom: 0px;
  margin-top: -480px;
- width: 460px;
- height: 475px;
-background-color: #486347;
+ /* width: 460px;
+ height: 475px; */
+ background-color: #486347;
 float: right;
 box-shadow: 1px 2px 4px #bd976a;
 padding: 10px;
+margin-left: 20%;
+color: white;
+display: grid;
+grid-template: auto/repeat(3,  30% 30% 33%);
+margin-top: -474px;
+
 }
 #trainer.img{
   height: 581px;
@@ -41,7 +47,7 @@ padding: 10px;
   grid-area: trainer;
     color: white;
 }
-#pokedex-grid{
+#rectangle{
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 33% 33% 33%;
   grid-template-areas:
@@ -52,7 +58,7 @@ padding: 10px;
 #spriteBox{
   /* border: 1px solid red; */
 
-  display: inline-block;
+  display: grid;
   align-content: center;
 }
 

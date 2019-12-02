@@ -31,7 +31,7 @@ body {
   grid-area: trainer;
     color: white;
 }
-#pokedex-grid{
+#rectangle{
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 33% 33% 33%;
   grid-template-areas:
